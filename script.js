@@ -30,14 +30,16 @@
         console.log('5' - '1'); // string - string = number
         console.log('5' + '2'); // string + string = string 
         // ---------------- Задача 2. Прямоугольник --------------------------
-        alert('Задача 2. Прямоугольник.');
-        console.log('Задача 2');
-        var st1 = prompt('Введите первую сторону: ');
-        var st2 = prompt('Введите вторую сторону: ');
-        console.log('Вы ввели такие стороны: ', st1, ' ', st2);
-        console.log('Периметр прямоугольника равен: ', st1 * 2 + st2 * 2);
-        console.log('Площадь прямоугольника равна: ', st1 * st2);
-        console.log('Отношение сторон прямоугольника равно: ', st1 / st2); 
+        function Zadanie1() {
+            alert('Задача 2. Прямоугольник.');
+            console.log('Задача 2');
+            var st1 = prompt('Введите первую сторону: ');
+            var st2 = prompt('Введите вторую сторону: ');
+            console.log('Вы ввели такие стороны: ', st1, ' ', st2);
+            console.log('Периметр прямоугольника равен: ', st1 * 2 + st2 * 2);
+            console.log('Площадь прямоугольника равна: ', st1 * st2);
+            console.log('Отношение сторон прямоугольника равно: ', st1 / st2);
+        }
         // ----------- Задача 3. Конвертация единиц измерения -----------------
         alert('Задача 3. Конвертация едениц измерения.');
         console.log('Задача 3');
@@ -48,7 +50,7 @@
         console.log(cels, '\u00B0C соответсвует', farenstr, '\u00B0F');
         var faren = prompt('Введите Фаренгейты: ');
         farennum = Number(faren);
-        var cels = (farennum - 32)/ 1.8;
+        var cels = (farennum - 32) / 1.8;
         var celsstr = cels.toString();
         console.log(farenstr, '\u00B0F соответсвует', celsstr, '\u00B0C');
         // ----------- Задача 4. Високосный год -------------------------------
