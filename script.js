@@ -23,6 +23,7 @@
         }
         // ----------------------- Преобразования ---------------------------
         function Zadanie1() {
+            console.log('Преобразования');
             console.log(true + 'test'); // boolean + string = string
             console.log('123' + undefined); // string + undefined = string
             console.log(1 + 4); // number + number = number
