@@ -3,22 +3,22 @@
         function types() {
             // тип string
             console.log('Типы данных');
-            var str = 'Hello'
+            let str = 'Hello'
             console.log(str);
             // тип number
-            var age = 28
+            let age = 28
             console.log(age);
             // тип boolean
-            var logic = true
+            let logic = true
             console.log(logic);
             // тип undefined
-            var undef
+            let undef
             console.log(undef);
             // тип null
-            var n = 29
+            let n = 29
             console.log(n);
-            var n = null
-            console.log(n);
+            let nu = null
+            console.log(nu);
             alert('Загляните в консоль!');
         }
         // ----------------------- Преобразования ---------------------------
@@ -37,8 +37,8 @@
         }
         // ---------------- Задача 2. Прямоугольник --------------------------
         function Zadanie2() {
-            var st1 = prompt('Введите первую сторону прямоугольника: ');
-            var st2 = prompt('Введите вторую сторону прямоугольника: ');
+            let st1 = prompt('Введите первую сторону прямоугольника: ');
+            let st2 = prompt('Введите вторую сторону прямоугольника: ');
             console.log('Вы ввели такие стороны: ', st1, ' ', st2);
             console.log('Периметр прямоугольника равен: ', st1 * 2 + st2 * 2);
             console.log('Площадь прямоугольника равна: ', st1 * st2);
@@ -47,22 +47,20 @@
         }
         // ----------- Задача 3. Конвертация единиц измерения -----------------
         function Zadanie3() {
-            var cels = prompt('Введите Цельсии: ');
-            celsnum = Number(cels);
-            var faren = celsnum * 1.8 + 32;
-            var farenstr = faren.toString();
-            console.log(cels, '\u00B0C соответсвует', farenstr, '\u00B0F');
-            var faren = prompt('Введите Фаренгейты: ');
-            farennum = Number(faren);
-            var cels = (farennum - 32) / 1.8;
-            var celsstr = cels.toString();
-            console.log(farenstr, '\u00B0F соответсвует', celsstr, '\u00B0C');
+            let cels = prompt('Введите Цельсии: ');
+            let celsnum = Number(cels);
+            let first = `${cels} \u00B0C соответсвует ${celsnum * 1.8 + 32} \u00B0F`;
+            console.log(first);
+            let faren = prompt('Введите Фаренгейты: ');
+            let farennum = Number(faren);
+            let second = `${faren} \u00B0F соответсвует ${(farennum - 32) / 1.8} \u00B0C`;
+            console.log(second);
             alert('Загляните в консоль!');
         }
         // ----------- Задача 4. Високосный год -------------------------------
         function Zadanie4() {
-            var god = prompt('Введите год: ');
-            var result = 0;
+            let god = prompt('Введите год: ');
+            let result = 0;
             result = (god % 4) == 0 ? (res = true) :
                 (god % 100) == 0 ? (res = true) :
                 (god % 400) == 0 ? (res = true) : (res = false);
@@ -76,17 +74,11 @@
         }
         // ----------- Задача 5. Проверка -------------------------------------
         function Zadanie5() {
-            var first = prompt('Введите первое число: ');
+            let first = prompt('Введите первое число: ');
             first = Number(first);
-            var second = prompt('Введите второе число: ');
+            let second = prompt('Введите второе число: ');
             second = Number(second);
-            var sum = first + second;
-            if (first == 10 || second == 10) {
-                console.log('True');
-            } else if (sum == 10) {
-                console.log('True');
-            } else {
-                console.log('False');
-            }
+            let sum = first + second;
+            let result = ((first == 10 || second == 10) || (sum == 10)) ? console.log('True') : console.log('False');
             alert('Загляните в консоль!');
         }
